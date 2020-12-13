@@ -9,30 +9,26 @@ background-color: #ADD8E6;
 }
 #cnta {
 position: absolute;  
-left: 400px;
-top: 200px;  
-width: 500px;
-height: 400px;  
-background-color: #7FFF00;
+left: 100px;
 }
 </style>
 </head>
 <body>
 <h1 id="ttle">How to Perform Server Hardening</h1>
 <p id="pp">This video describes the process of server hardening. my server is Ubuntu-Server-18.04 VPS</p>
-<iframe src="https://nimakar.ir/serverh.webm" width="1100" height="780"></iframe>
+<iframe id="cnta" src="https://nimakar.ir/serverh.webm" width="1200" height="780"></iframe>
   <script type="text/javascript">
     var cnt = 0;
     function ttg() {
       if( cnt == 0) {
-    document.getElementById("pp").style.color = blue;
+    document.getElementById("pp").style.color = "blue";
       }else if( cnt == 1) {
-        document.getElementById("pp").style.color = red;
+        document.getElementById("pp").style.color = "red";
       }else if( cnt == 2) {
-      document.getElementById("pp").style.color = green;
+      document.getElementById("pp").style.color = "green";
       }else if( cnt == 3) {
       cnt = 0;
-       document.getElementById("pp").style.color = blue; 
+       document.getElementById("pp").style.color = "blue"; 
       }
       cnt += 1;
     }
