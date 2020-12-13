@@ -19,9 +19,24 @@ background-color: #7FFF00;
 </head>
 <body>
 <h1 id="ttle">How to Perform Server Hardening</h1>
-  <p>I hope this works</p>
-<iframe src="https://nimakar.ir/serverh.webm" width="640" height="480"></iframe>
+<p id="pp">This video describes the process of server hardening. my server is Ubuntu-Server-18.04 VPS</p>
+<iframe src="https://nimakar.ir/serverh.webm" width="1100" height="780"></iframe>
   <script type="text/javascript">
+    var cnt = 0;
+    function ttg() {
+      if( cnt == 0) {
+    document.getElementById("pp").style.color = blue;
+      }else if( cnt == 1) {
+        document.getElementById("pp").style.color = red;
+      }else if( cnt == 2) {
+      document.getElementById("pp").style.color = green;
+      }else if( cnt == 3) {
+      cnt = 0;
+       document.getElementById("pp").style.color = blue; 
+      }
+      cnt += 1;
+    }
+    setInterval( ttg, 1000);
     
   </script>
 </body>
